@@ -1,0 +1,25 @@
+To start zookeeeper run following command 
+C:\Users\HP\Downloads\kafka_2.13-3.7.0>bin\windows\zookeeper-shell.bat config\zookeeper.properties.
+
+To start kafka server
+C:\kafka_2.13-3.7.0>bin\windows\kafka-server-start.bat config\server.properties.
+
+//To Check all command of kafka
+bin\windows\kafka-topics.bat
+
+//To Create Topics 
+bin\windows\kafka-topics.bat --create --topic user-topic1 --bootstrap-server localhost:9092
+
+//Command for help
+bin\windows\kafka-acls.bat --help
+
+//Create producer
+bin\windows\kafka-console-producer.bat --topic user-topic1 --bootstrap-server localhost:9092
+
+//read
+
+To create Topic :- (kafka-topics)
+To Create producer :- (kafka-console-producer)
+Consume the message :- (kafka-console consumer)
+
+
